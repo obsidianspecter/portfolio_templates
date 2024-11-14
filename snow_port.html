@@ -1,0 +1,214 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Minimalistic Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            background-color: #f7fafc; /* Tailwind's bg-gray-100 */
+            overflow-x: hidden;
+        }
+        .particle {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            animation: move 10s infinite;
+        }
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(100vw, 100vh);
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div id="particles">
+  </div>
+  <header class="text-center py-8">
+   <h1 class="text-5xl font-bold">
+    Minimalistic Portfolio
+   </h1>
+   <p class="text-2xl">
+    Web Developer & Designer
+   </p>
+  </header>
+  <section class="py-16" id="about">
+   <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-4">
+     About Me
+    </h2>
+    <p class="text-lg max-w-2xl mx-auto">
+     I am a passionate web developer with a knack for creating beautiful and functional websites. With a background in design and a love for coding, I bring a unique perspective to every project I work on.
+    </p>
+   </div>
+  </section>
+  <section class="py-16 bg-gray-100" id="portfolio">
+   <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-4">
+     Portfolio
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white p-4 shadow-lg">
+      <img alt="Screenshot of a modern, responsive website design" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/9bf07OGGRelufIXfQoeP8fejruQcDyfDoCenfdqx2I0jJ2cDPB.jpg" width="600"/>
+      <h3 class="text-2xl font-bold">
+       Project 1
+      </h3>
+      <p class="text-gray-700">
+       A modern, responsive website design.
+      </p>
+     </div>
+     <div class="bg-white p-4 shadow-lg">
+      <img alt="Screenshot of an e-commerce website with a clean layout" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/fDydE9Q2H1xOYC3HdGbNYjlbOkBx0mlpBMae1PBOqnclN3wTA.jpg" width="600"/>
+      <h3 class="text-2xl font-bold">
+       Project 2
+      </h3>
+      <p class="text-gray-700">
+       An e-commerce website with a clean layout.
+      </p>
+     </div>
+     <div class="bg-white p-4 shadow-lg">
+      <img alt="Screenshot of a portfolio website showcasing various projects" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/X6uS1aMZcyquDdxQjmOVeSj91akbwMV7zpug5dffe9oP2cDPB.jpg" width="600"/>
+      <h3 class="text-2xl font-bold">
+       Project 3
+      </h3>
+      <p class="text-gray-700">
+       A portfolio website showcasing various projects.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-16" id="services">
+   <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-4">
+     Services
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="p-4">
+      <i class="fas fa-code text-5xl mb-4">
+      </i>
+      <h3 class="text-2xl font-bold">
+       Web Development
+      </h3>
+      <p class="text-gray-700">
+       Building responsive and functional websites.
+      </p>
+     </div>
+     <div class="p-4">
+      <i class="fas fa-paint-brush text-5xl mb-4">
+      </i>
+      <h3 class="text-2xl font-bold">
+       Web Design
+      </h3>
+      <p class="text-gray-700">
+       Creating visually appealing and user-friendly designs.
+      </p>
+     </div>
+     <div class="p-4">
+      <i class="fas fa-mobile-alt text-5xl mb-4">
+      </i>
+      <h3 class="text-2xl font-bold">
+       Mobile Optimization
+      </h3>
+      <p class="text-gray-700">
+       Ensuring websites are mobile-friendly and responsive.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-16 bg-gray-100" id="contact">
+   <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-4">
+     Contact
+    </h2>
+    <p class="text-lg mb-8">
+     Feel free to reach out to me for any project or collaboration.
+    </p>
+    <form class="max-w-lg mx-auto">
+     <div class="mb-4">
+      <input class="w-full p-3 border border-gray-300 rounded" placeholder="Name" type="text"/>
+     </div>
+     <div class="mb-4">
+      <input class="w-full p-3 border border-gray-300 rounded" placeholder="Email" type="email"/>
+     </div>
+     <div class="mb-4">
+      <textarea class="w-full p-3 border border-gray-300 rounded" placeholder="Message"></textarea>
+     </div>
+     <button class="w-full p-3 bg-blue-500 text-white rounded" type="submit">
+      Send Message
+     </button>
+    </form>
+   </div>
+  </section>
+  <footer class="text-center py-8 bg-gray-200">
+   <p>
+    © 2023 Minimalistic Portfolio. All rights reserved.
+   </p>
+  </footer>
+  <script>
+   // JavaScript for particle effect
+        const numParticles = 100;
+        const particles = [];
+        const particlesContainer = document.getElementById('particles');
+
+        for (let i = 0; i < numParticles; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.top = `${Math.random() * 100}vh`;
+            particle.style.left = `${Math.random() * 100}vw`;
+            particle.style.animationDuration = `${Math.random() * 10 + 5}s`;
+            particlesContainer.appendChild(particle);
+            particles.push(particle);
+        }
+
+        // JavaScript for other JS features
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fadeIn');
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+
+        // CSS for fadeIn animation
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            .animate-fadeIn {
+                animation: fadeIn 1s ease-in-out;
+            }
+        `;
+        document.head.appendChild(style);
+  </script>
+ </body>
+</html>

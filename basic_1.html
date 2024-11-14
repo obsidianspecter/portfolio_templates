@@ -1,0 +1,153 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Minimalistic Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .breathing-effect {
+            animation: breathing 3s ease-in-out infinite;
+        }
+        @keyframes breathing {
+            0%, 100% {
+                background-color: #f7fafc; /* Tailwind's bg-gray-100 */
+            }
+            50% {
+                background-color: #edf2f7; /* Tailwind's bg-gray-200 */
+            }
+        }
+  </style>
+ </head>
+ <body class="text-gray-900 breathing-effect">
+  <header class="text-center py-8">
+   <h1 class="text-4xl font-bold">
+    John Doe
+   </h1>
+   <p class="text-xl">
+    Web Developer &amp; Designer
+   </p>
+  </header>
+  <section class="py-16 bg-white" id="about">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">
+     About Me
+    </h2>
+    <p class="text-lg max-w-2xl mx-auto">
+     I am a passionate web developer with a knack for creating beautiful and functional websites. With a background in design and a love for coding, I bring a unique perspective to every project I work on.
+    </p>
+   </div>
+  </section>
+  <section class="py-16" id="portfolio">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">
+     Portfolio
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-white p-4 shadow-md">
+      <img alt="Screenshot of a modern, responsive website design" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/LmRk5qCY8kaTIRRfBLuNMoVEeXFkeLDkkX7FTEJZwJ36WuhnA.jpg" width="600"/>
+      <h3 class="text-xl font-bold">
+       Project 1
+      </h3>
+      <p class="text-gray-700">
+       A modern, responsive website design.
+      </p>
+     </div>
+     <div class="bg-white p-4 shadow-md">
+      <img alt="Screenshot of an e-commerce website with a clean layout" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/geIlYyJ8DS1pdyN04PBXw4uU1kQ8uLmfSK2D2J4MfkM9WuhnA.jpg" width="600"/>
+      <h3 class="text-xl font-bold">
+       Project 2
+      </h3>
+      <p class="text-gray-700">
+       An e-commerce website with a clean layout.
+      </p>
+     </div>
+     <div class="bg-white p-4 shadow-md">
+      <img alt="Screenshot of a portfolio website showcasing various projects" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/gt8nRF0fRby2NKiEo5f7Y2QURu6KgCWNCbcKlFGOXDzfWuhnA.jpg" width="600"/>
+      <h3 class="text-xl font-bold">
+       Project 3
+      </h3>
+      <p class="text-gray-700">
+       A portfolio website showcasing various projects.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-16 bg-white" id="services">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">
+     Services
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="p-4">
+      <i class="fas fa-code text-4xl mb-4">
+      </i>
+      <h3 class="text-xl font-bold">
+       Web Development
+      </h3>
+      <p class="text-gray-700">
+       Building responsive and functional websites.
+      </p>
+     </div>
+     <div class="p-4">
+      <i class="fas fa-paint-brush text-4xl mb-4">
+      </i>
+      <h3 class="text-xl font-bold">
+       Web Design
+      </h3>
+      <p class="text-gray-700">
+       Creating visually appealing and user-friendly designs.
+      </p>
+     </div>
+     <div class="p-4">
+      <i class="fas fa-mobile-alt text-4xl mb-4">
+      </i>
+      <h3 class="text-xl font-bold">
+       Mobile Optimization
+      </h3>
+      <p class="text-gray-700">
+       Ensuring websites are mobile-friendly and responsive.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-16" id="contact">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">
+     Contact
+    </h2>
+    <p class="text-lg mb-8">
+     Feel free to reach out to me for any project or collaboration.
+    </p>
+    <form class="max-w-lg mx-auto">
+     <div class="mb-4">
+      <input class="w-full p-3 border border-gray-300 rounded" placeholder="Name" type="text"/>
+     </div>
+     <div class="mb-4">
+      <input class="w-full p-3 border border-gray-300 rounded" placeholder="Email" type="email"/>
+     </div>
+     <div class="mb-4">
+      <textarea class="w-full p-3 border border-gray-300 rounded" placeholder="Message"></textarea>
+     </div>
+     <button class="w-full p-3 bg-blue-500 text-white rounded" type="submit">
+      Send Message
+     </button>
+    </form>
+   </div>
+  </section>
+  <footer class="text-center py-8 bg-gray-200">
+   <p>
+    © 2023 John Doe. All rights reserved.
+   </p>
+  </footer>
+ </body>
+</html>

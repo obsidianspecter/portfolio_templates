@@ -1,0 +1,161 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Breathing Colors Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+        }
+        .breathing-effect {
+            animation: breathing 6s ease-in-out infinite;
+        }
+        @keyframes breathing {
+            0%, 100% {
+                background-color: #ff0000; /* Red */
+            }
+            33% {
+                background-color: #00ff00; /* Green */
+            }
+            66% {
+                background-color: #0000ff; /* Blue */
+            }
+        }
+        .neon-border {
+            border: 2px solid #ff00ff;
+            box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff;
+        }
+  </style>
+ </head>
+ <body class="breathing-effect">
+  <header class="text-center py-8">
+   <h1 class="text-5xl font-bold">
+    Alex Johnson
+   </h1>
+   <p class="text-2xl">
+    Creative Developer
+   </p>
+  </header>
+  <section class="py-16" id="about">
+   <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-4">
+     About Me
+    </h2>
+    <p class="text-lg max-w-2xl mx-auto">
+     I am a creative developer with a passion for building visually stunning and highly functional web applications. My expertise spans across front-end and back-end development, ensuring a seamless user experience.
+    </p>
+   </div>
+  </section>
+  <section class="py-16" id="portfolio">
+   <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-4">
+     Portfolio
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="bg-black p-4 shadow-lg neon-border">
+      <img alt="Screenshot of a futuristic web application with neon lights" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/9bf07OGGRelufIXfQoeP8fejruQcDyfDoCenfdqx2I0jJ2cDPB.jpg" width="600"/>
+      <h3 class="text-2xl font-bold">
+       Project 1
+      </h3>
+      <p class="text-gray-300">
+       A futuristic web application with neon lights.
+      </p>
+     </div>
+     <div class="bg-black p-4 shadow-lg neon-border">
+      <img alt="Screenshot of a sleek, dark-themed web application" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/fDydE9Q2H1xOYC3HdGbNYjlbOkBx0mlpBMae1PBOqnclN3wTA.jpg" width="600"/>
+      <h3 class="text-2xl font-bold">
+       Project 2
+      </h3>
+      <p class="text-gray-300">
+       A sleek, dark-themed web application.
+      </p>
+     </div>
+     <div class="bg-black p-4 shadow-lg neon-border">
+      <img alt="Screenshot of a vibrant, neon-themed single-page application" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/X6uS1aMZcyquDdxQjmOVeSj91akbwMV7zpug5dffe9oP2cDPB.jpg" width="600"/>
+      <h3 class="text-2xl font-bold">
+       Project 3
+      </h3>
+      <p class="text-gray-300">
+       A vibrant, neon-themed single-page application.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-16" id="services">
+   <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-4">
+     Services
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <div class="p-4">
+      <i class="fas fa-server text-5xl mb-4">
+      </i>
+      <h3 class="text-2xl font-bold">
+       Backend Development
+      </h3>
+      <p class="text-gray-300">
+       Creating robust and scalable server-side applications.
+      </p>
+     </div>
+     <div class="p-4">
+      <i class="fas fa-laptop-code text-5xl mb-4">
+      </i>
+      <h3 class="text-2xl font-bold">
+       Frontend Development
+      </h3>
+      <p class="text-gray-300">
+       Building responsive and interactive user interfaces.
+      </p>
+     </div>
+     <div class="p-4">
+      <i class="fas fa-cloud text-5xl mb-4">
+      </i>
+      <h3 class="text-2xl font-bold">
+       Cloud Integration
+      </h3>
+      <p class="text-gray-300">
+       Integrating applications with cloud services for better scalability.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section class="py-16" id="contact">
+   <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-4">
+     Contact
+    </h2>
+    <p class="text-lg mb-8">
+     Let's discuss your next project or collaboration.
+    </p>
+    <form class="max-w-lg mx-auto">
+     <div class="mb-4">
+      <input class="w-full p-3 border border-gray-300 rounded bg-black text-white" placeholder="Name" type="text"/>
+     </div>
+     <div class="mb-4">
+      <input class="w-full p-3 border border-gray-300 rounded bg-black text-white" placeholder="Email" type="email"/>
+     </div>
+     <div class="mb-4">
+      <textarea class="w-full p-3 border border-gray-300 rounded bg-black text-white" placeholder="Message"></textarea>
+     </div>
+     <button class="w-full p-3 bg-blue-600 text-white rounded" type="submit">
+      Send Message
+     </button>
+    </form>
+   </div>
+  </section>
+  <footer class="text-center py-8 bg-black text-white">
+   <p>
+    © 2023 Alex Johnson. All rights reserved.
+   </p>
+  </footer>
+ </body>
+</html>
